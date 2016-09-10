@@ -16,7 +16,5 @@
     "url": "https://github.com/Serviox19/semantic-ui-/issues"
   },
   "homepage": "https://github.com/Serviox19/semantic-ui-#readme",
-  "dependencies": {
-    "semantic-ui": "^2.2.4"
-  }
+  "dependencies": {}
 }
