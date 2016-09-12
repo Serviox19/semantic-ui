@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
-  $('#search').keypress(function (event) {
+  $('#search').keypress(function(e) {
     if (event.which == 13) {
-      event.preventDefault();
+      e.preventDefault();
 
       var query = $('#search').val();
       $('#search').val('');
@@ -14,8 +14,13 @@ $(document).ready(function () {
       apiUrl += "&name=" + query;
       apiUrl += "&key=" + apiKey;
 
-      $.getJSON("apiUrl", function (data) {
-        console.log(data);
+      $.ajax({
+        type: "GET",
+        url: apiUrl,
+        dataType: 'json',
+        success: function (data) {
+          console.log(JSON.stringify(data));
+        }
       });
     };
   });

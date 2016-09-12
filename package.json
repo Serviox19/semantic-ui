@@ -1,0 +1,25 @@
+{
+  "name": "semantic-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Serviox19/semantic-ui-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Serviox19/semantic-ui-/issues"
+  },
+  "homepage": "https://github.com/Serviox19/semantic-ui-#readme",
+  "dependencies": {
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  }
+}
