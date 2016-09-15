@@ -14,10 +14,73 @@
       <a class="item" href="#">Food</a>
     </div>
 
-    <h1>Food Page</h1>
+    <div class="ui grid container">
+      <div class="row">
+        <h1 class="ui header" id="header">Get Food!</h1>
+      </div><!-- End Row-->
+      <div class="row">
+        <div class="four wide column"></div>
+        <div class="eight wide column">
+          <div class="ui form">
+              <div class="inline fields">
+                <div class="seven wide field">
+                  <input type="text" placeholder="Search For Places!" id="search">
+                </div>
+                <div class="seven wide field">
+                  <input type="text" placeholder="Near" id="near">
+                </div>
+                <div class="two wide field">
+                  <button class="ui icon button" type="submit" id="submit">
+                    <i class="search icon"></i>
+                  </button>
+                </div>
+              </div>
+          </div><!-- End ui Form-->
+          <div class="row">
+            <div class="ui form">
+              <div class="inline fields">
+                <label for="fruit">Type:</label>
+                <div class="field">
+                  <div class="ui radio checkbox">
+                    <input type="radio" id="burger" tabindex="0">
+                    <label>Burgers</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="ui radio checkbox">
+                    <input type="radio" id="deli" tabindex="0">
+                    <label>Deli's</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="ui radio checkbox">
+                    <input type="radio" id="fast" tabindex="0">
+                    <label>Fast-Food</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="ui radio checkbox">
+                    <input type="radio" id="pizza" tabindex="0">
+                    <label>Pizza</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="ui radio checkbox">
+                    <input type="radio" id="sandwiches" tabindex="0">
+                    <label>Sandwiches</label>
+                  </div>
+                </div>
+              </div><!-- End Inline Fields-->
+            </div>
+          </div>
+        </div><!-- End Input Div-->
+        <div class="four wide columns"></div>
+      </div><!-- End Row-->
+    </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="../js/food.js"></script>
+    <script src="../semantic/components/checkbox.min.js"></script>
   </body>
 </html>

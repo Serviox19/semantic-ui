@@ -8,18 +8,18 @@ $(document).ready(function () {
       $('#search').val('');
       console.log(query);
 
-      var apiKey = "AIzaSyAZQHq7l89tNlgeL8ZMO3CP3JGY0Jg1noo";
+      var apiKey = "AIzaSyDog5xiiCVTJDq6PyLNExs_OnAfxCf4bg0";
       var apiUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?";
       apiUrl += "location=40.840007,-74.128968&radius=3000";
       apiUrl += "&name=" + query;
       apiUrl += "&key=" + apiKey;
 
       $.ajax({
-        type: "GET",
+        type: 'GET',
         url: apiUrl,
         dataType: 'json',
         success: function (data) {
-          console.log(JSON.stringify(data));
+          console.log(data);
         }
       });
     };
